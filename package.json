@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Adam R. Nelson's résumé",
+  "main": "index.js",
+  "author": "Adam R. Nelson <adam@nels.onl>",
+  "license": "CC0",
+  "private": true,
+  "scripts": {
+    "build": "jake",
+    "watch": "jake watch"
+  },
+  "devDependencies": {
+    "jake": "^10.8.2",
+    "mustache": "^4.2.0",
+    "nodemon": "^2.0.7",
+    "puppeteer": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.12",
+    "showdown": "^1.9.1"
+  }
+}
