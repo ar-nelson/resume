@@ -15,9 +15,8 @@
 - Web
     - 10+ years professional experience
     - Modern HTML+CSS+JS
-    - Full-stack (Node, Rails)
-    - React, Angular
-    - Typescript
+    - Full-stack (Node, Rails, AEM)
+    - React, Angular, Typescript
 
 - JVM
     - 10+ years professional experience
@@ -27,7 +26,7 @@
 
 - Functional Programming
     - 8 years experience
-    - Professional: Scala
+    - Professional: Scala, functional JS via fp-ts
     - Academic: SML, HOL4, Haskell
     - Hobbyist: Haskell, Scheme, dozens of minor languages
     - Designed and implemented own functional languages
@@ -38,18 +37,27 @@
     - Docker, Ansible
 
 - Misc
-    - Documentation, API design
     - Test-driven development
     - Agile methods
     - Participant in open-source community
 
 ## Professional Experience
 
-1. **Maark**
+1. **Simspace**
+
+    Senior Software Engineer
+
+    2021
+
+    - Worked on a massive React SPA for a cybersecurity training application
+    - Wrote Typescript in a purely-functional style, using fp-ts to bring
+      Haskell features, like monads, into Typescript
+
+2. **Maark**
 
     Senior Web Engineer
 
-    2020-present
+    2020-2021
 
     - Worked with a team to build a shared library of vanilla JS and React
       components, Sass stylesheets, and Webpack configurations used across
@@ -58,7 +66,7 @@
     - Some full-stack development, including writing Java Spring code for an
       Adobe Experience Manager backend
 
-2. **Cigna**
+3. **Cigna**
 
     Software Developer
 
@@ -68,7 +76,7 @@
       planning and developing an Angular 6 single-page application from scratch
       and integrating with a complex network of legacy data services
 
-3. **University of Massachusetts**
+4. **University of Massachusetts**
 
     Graduate Research Assistant
 
@@ -80,7 +88,7 @@
     - Traveled to Canberra, Australia to learn logic programming in person
       from the maintainer of the open-source HOL4 theorem prover
 
-4. **Edifecs**
+5. **Edifecs**
 
     Associate Software Engineer
 
@@ -92,16 +100,6 @@
       coordinating and messaging among multiple JVM processes
     - Wrote and remotely maintained an ExtJS single-page web application as
       the UI for an intranet system used throughout the company
-
-5. **Rosetta Stone**
-
-    Software Development Intern
-
-    2010-2011
-
-    - Maintained a large Ruby on Rails codebase as part of an Agile team
-    - Practiced test-driven development, using and updating an extensive suite
-      of server and browser tests
 
 ## Education
 
@@ -119,7 +117,17 @@
 
 ## Personal Projects
 
-- **Schemepunk**¹ (2020-present)
+- **Project Kraken** (2022)
+
+   A server-client multiplayer game engine written from scratch in C and SDL.
+   The game in question is a block-building platformer game, similar to
+   Terraria. I built this game engine over the course of a few months on
+   a sabbatical; it's still in progress, but simple multiplayer sessions already
+   work.
+
+   Ongoing project with no presence on GitHub yet; source available on request.
+
+- **Schemepunk**¹ (2020-2021)
 
     A portable standard library for R7RS Scheme. It is compatible with 7 Scheme
     dialects, and implements or polyfills 27 modules, including data structures,
@@ -147,7 +155,7 @@
     A peer-to-peer data synchronization library for native apps. Keeps mobile
     and desktop copies of an app in sync whenever they connect to the same
     network. Uses encryption and a custom JSON CRDT. A prototype⁴ is currently
-    written in Node.js, but I plan to rewrite it in C or Rust.
+    written in Node.js, but I plan to rewrite it in C.
 
     While developing this library, I published several sublibraries⁵⁶⁷ as small
     standalone Node packages.
