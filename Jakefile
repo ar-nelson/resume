@@ -4,7 +4,7 @@ const fs = require("fs");
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const rimraf = promisify(require("rimraf"));
-const showdown = require("showdown");
+const marked = require("marked");
 const Mustache = require("mustache");
 const sass = require("sass");
 const puppeteer = require("puppeteer");
@@ -35,7 +35,7 @@ file(PATH_HTML, [PATH_DIR, PATH_MARKDOWN, PATH_TEMPLATE], async () => {
   }
   let markdown = await readFile(PATH_MARKDOWN, { encoding: "utf8" });
   markdown = Mustache.render(markdown, { phone });
-  const rawHtml = new showdown.Converter().makeHtml(markdown);
+  const rawHtml = marked.parse(markdown);
   const template = await readFile(PATH_TEMPLATE, { encoding: "utf8" });
   const finalHtml = Mustache.render(template, {
     body: rawHtml,
